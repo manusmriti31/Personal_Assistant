@@ -12,7 +12,7 @@ chatStr = ""
 def chat(command):
     global chatStr
     print(chatStr)
-    openai.api_key = "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"
+    openai.api_key = "API-KEY"
     chatStr += f"Manu: {command}\nJarvis: "
     response = openai.Completion.create(
         model="gpt-3.5-turbo",
